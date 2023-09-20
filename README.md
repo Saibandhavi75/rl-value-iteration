@@ -63,7 +63,6 @@ The episode terminates when the agent reaches the goal state (G) or falls into a
       .Take the value function V(s) to be the maximum of Q(s, a) over all actions a.
       .Check if the maximum difference between Old V and new V is less than theta.
       .Where theta is a small positive number that determines the accuracy of estimation.
-
 3.If the maximum difference between Old V and new V is greater than theta, then
   
   .Update the value function V with the maximum action-value from Q.
