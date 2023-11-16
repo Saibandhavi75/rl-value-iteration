@@ -12,29 +12,29 @@ G (Goal): The state the agent aims to reach.
 
 H (Hole): A hazardous state that the agent must avoid at all costs.
 ## 11 Non-terminal States:
-S (Starting state): The initial position of the agent.
+* S (Starting state): The initial position of the agent.
 
-Intermediate states: Grid cells forming a layout that the agent must traverse.
+* Intermediate states: Grid cells forming a layout that the agent must traverse.
 
 ## Actions
 The agent can take 4 actions in each state:
 
-.LEFT
-.RIGHT
-.UP
-.DOWN
+* LEFT
+* RIGHT
+* UP
+* DOWN
 ## Transition Probabilities
 The environment is stochastic, meaning that the outcome of an action is not always certain.
 
-.33.33% chance of moving in the intended direction.
+* 33.33% chance of moving in the intended direction.
 
-.66.66% chance of moving in a orthogonal directions.
+* 66.66% chance of moving in a orthogonal directions.
 
 This uncertainty adds complexity to the agent's navigation.
 
 ## Rewards
-+1 for reaching the goal state(G).
-0 reward for all other states, including the starting state (S) and intermediate states.
+* +1 for reaching the goal state(G).
+* 0 reward for all other states, including the starting state (S) and intermediate states.
 ## Episode Termination
 The episode terminates when the agent reaches the goal state (G) or falls into a hole (H).
 
